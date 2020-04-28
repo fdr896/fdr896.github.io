@@ -3,13 +3,13 @@ document.write(`<head>
 </head>
 
 <header>
-    <h2>Big boys</h2>
+    <img src="./logo.png" />
     <nav>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sources.html">Sources</a></li>
-            <li><a href="./links.html">External links</a></li>
-            <li><a href="./about.html">About us</a></li>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./advantages.html">Плюсы и минусы</a></li>
+            <li><a href="./links.html">Внешние ссылки</a></li>
+            <li><a href="./about.html">О нас</a></li>
         </ul>
     </nav>
 </header>`);
