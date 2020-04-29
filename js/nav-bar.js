@@ -1,9 +1,9 @@
 document.write(`<head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
 </head>
 
 <header>
-    <img src="img/logo.png" />
+    <a class="logo" href="./index.html"><img src="img/logo.png" /></a>
     <nav>
         <ul>
             <li><a href="./index.html">Главная</a></li>
@@ -15,6 +15,10 @@ document.write(`<head>
 </header>`);
 
 for (let i = 0; i < document.links.length; i++) {
+    if (document.links[i].className) {
+        continue;
+    }
+
     if (document.links[i].href == document.URL) {
         document.links[i].className = "active";
     } else {

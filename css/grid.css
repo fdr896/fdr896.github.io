@@ -1,0 +1,61 @@
+.grid {
+    display: grid;
+    align-content: center;
+    grid-template-areas: 
+    'adv dis'
+    'adv1 dis1'
+    'adv2 dis2'
+    'adv3 dis3'
+    'adv4 dis4'
+    'adv5 dis5'
+    'adv6 dis6'
+    ;
+}
+
+.grid span {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.grid p {
+    text-decoration: underline;
+    margin-left: 37%;
+    font-size: 18px;
+    width: max-content;
+}
+
+.grid p:hover {
+    color: blue;
+}
+
+h2.title {
+    margin-bottom: 70px;
+}
+
+pre {
+    word-wrap: normal;
+    white-space: normal;
+}
+
+.grid div p + .dropdown {
+    position: absolute;
+    padding: 2px 7px;
+    margin: 0;
+    margin-left: 17%;
+    max-width: 500px;
+    z-index: -1;
+
+    transition: 0.3s;
+    opacity: 0;
+
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.grid div p:hover + .dropdown {
+    display: block;
+    opacity: 1;
+    z-index: 101;
+}
