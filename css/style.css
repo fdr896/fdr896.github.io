@@ -1,4 +1,3 @@
-/* restructed zone */
 header {
     margin: 0;
     display: flex;
@@ -39,7 +38,7 @@ header li a {
     display: block;
     text-align: center;
     line-height: 80px;
-    width: 200px;
+    width: 230px;
     height: 80px;
     color: black;
     text-decoration: none;
@@ -67,9 +66,8 @@ body {
     margin-top: 120px;
     background-size: cover;
 }
-/* restricted zone */
 
-p {
+.main {
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -77,7 +75,68 @@ p {
 .title {
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 40px;
+    margin-top: 90px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.contacts {
+    padding-left: 40%;
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    align-content: center;
+    grid-template-areas: 
+    'adv dis'
+    'adv1 dis1'
+    'adv2 dis2'
+    'adv3 dis3'
+    'adv4 dis4'
+    'adv5 dis5'
+    'adv6 dis6'
+    ;
+}
+
+.grid span {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.grid p {
+    text-decoration: underline;
+    padding-left: 37%;
+    font-size: 18px;
+}
+
+.grid p:hover {
+    color: blue;
+}
+
+h2.title {
+    margin-bottom: 70px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 2px 7px;
+    margin: 0;
+    z-index: 100;
+    font-size: 13px;
+    max-width: 500px;
+    margin-left: 17%;
+}
+
+pre {
+    word-wrap: normal;
+    white-space: normal;
+}
+
+.grid div p:hover + .dropdown {
+    display: block;
 }

@@ -1,15 +1,15 @@
 document.write(`<head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <header>
-    <img src="./logo.png" />
+    <img src="img/logo.png" />
     <nav>
         <ul>
             <li><a href="./index.html">Главная</a></li>
             <li><a href="./advantages.html">Плюсы и минусы</a></li>
             <li><a href="./links.html">Внешние ссылки</a></li>
-            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./about.html">Контакты</a></li>
         </ul>
     </nav>
 </header>`);
