@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     align-content: center;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     'adv dis'
     'adv1 dis1'
@@ -13,27 +14,27 @@
 }
 
 .grid span {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .grid p {
     text-decoration: underline;
-    margin-left: 37%;
-    font-size: 18px;
+    font-size: 21px;
     width: max-content;
+    padding-left: 31%;
 }
 
 .grid p:hover {
     color: blue;
 }
 
-h2.title {
+h1.title {
     margin-bottom: 70px;
 }
 
-pre {
+.grid pre {
     word-wrap: normal;
     white-space: normal;
 }
@@ -41,8 +42,7 @@ pre {
 .grid div p + .dropdown {
     position: absolute;
     padding: 2px 7px;
-    margin: 0;
-    margin-left: 17%;
+    margin-left: 14%;
     max-width: 500px;
     z-index: -1;
 
@@ -51,7 +51,7 @@ pre {
 
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .grid div p:hover + .dropdown {
