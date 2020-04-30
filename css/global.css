@@ -21,3 +21,11 @@ body {
 .contacts li {
     margin-top: 15px;
 }
+
+pre.contacts {
+    font-size: 20px;
+}
+
+.contacts li a {
+    font-size: 20px;
+}
