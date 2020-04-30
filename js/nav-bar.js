@@ -6,16 +6,16 @@ document.write(`<head>
     <a class="logo" href="./index.html"><img src="img/logo.png" /></a>
     <nav>
         <ul>
-            <li><a href="./index.html">Главная</a></li>
-            <li><a href="./advantages.html">Плюсы и минусы</a></li>
-            <li><a href="./links.html">Внешние ссылки</a></li>
-            <li><a href="./about.html">Контакты</a></li>
+            <li><a class="active" href="./index.html">Главная</a></li>
+            <li><a class="inactive" href="./advantages.html">Плюсы и минусы</a></li>
+            <li><a class="inactive" href="./links.html">Внешние ссылки</a></li>
+            <li><a class="inactive" href="./about.html">Контакты</a></li>
         </ul>
     </nav>
 </header>`);
 
 for (let i = 0; i < document.links.length; i++) {
-    if (document.links[i].className) {
+    if (document.links[i].className === "logo") {
         continue;
     }
 
