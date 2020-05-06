@@ -18,6 +18,10 @@ for (let i = 0; i < document.links.length; i++) {
     if (document.links[i].className === "logo") {
         continue;
     }
+    
+    console.log(document.links[i].href);
+    console.log(document.URL);
+    console.log(document.URL === document.links[i].href);
 
     if (document.links[i].href === document.URL) {
         document.links[i].className = "active";
